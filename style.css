@@ -1,11 +1,18 @@
 :root {
   font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.6);
 }
 
 html,
 body {
   padding: 0px;
   margin: 0px;
+  background: linear-gradient(
+    45deg,
+    rgba(120, 28, 144, 1) 0%,
+    rgba(142, 39, 148, 1) 20%,
+    rgba(177, 51, 110, 1) 100%
+  );
 }
 
 main {
@@ -28,17 +35,20 @@ form fieldset {
   height: 50px;
   outline: none;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 form fieldset input {
   position: absolute;
   left: 0px;
-  bottom: 1px;
+  bottom: 2px;
 
   width: 100%;
 
   font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+
+  background-color: transparent;
 
   border-radius: 0px;
   outline: none;
@@ -62,7 +72,7 @@ form fieldset label .label-name {
 form fieldset label:after {
   content: "";
   width: 100%;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 0px;
   bottom: -1px;
@@ -75,8 +85,8 @@ form .input:focus + label .label-name,
 form .input:valid + label .label-name {
   position: absolute;
   transform: translateY(-200%);
-  font-size: 12px;
-  color: blue;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
 }
 
 form .input:focus + label:after,
